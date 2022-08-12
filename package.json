@@ -1,0 +1,15 @@
+{
+  "name": "fullstack-musikzite",
+  "version": "1.0.0",
+  "description": "root fullstack-musikzite",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run serve\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Rincones",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

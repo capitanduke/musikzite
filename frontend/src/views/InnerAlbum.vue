@@ -17,7 +17,7 @@ export default {
         const { id } = this.$route.params
         this.api.spotifyService.albumTracks(id).then((res) => {
             this.tracks = res.album.tracks.items
-            console.log(this.tracks)
+            console.log('the tracks--->', this.tracks)
         })
     },
 }

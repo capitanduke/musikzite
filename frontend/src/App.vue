@@ -7,13 +7,11 @@
 </template>
 
 <script>
-import MyLogin from './components/MyLogin.vue'
 import TheLayout from './components/TheLayout/TheLayout.vue'
 
 export default {
     name: 'App',
     components: {
-        MyLogin,
         TheLayout,
     },
 }

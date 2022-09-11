@@ -61,7 +61,7 @@ function getAll() {
         headers: authHeader(),
     }
 
-    return fetch(`${process.env.VUE_APP_URL}/users`, requestOptions).then(
+    return fetch(`${process.env.VUE_APP_URL}users`, requestOptions).then(
         handleResponse
     )
 }

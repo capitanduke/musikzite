@@ -45,6 +45,7 @@ import { mapActions } from 'vuex'
 
 export default {
     name: 'MyLogin',
+    inject: ['api'],
     data() {
         return {
             email: '',
@@ -53,11 +54,8 @@ export default {
             isLogin: false,
         }
     },
-    inject: ['api'],
 
     mounted() {
-        console.log('computed log->>>>', this.isLogin)
-        console.log('computed log->>>>', this.isLogin)
         if (localStorage.getItem('accessToken')) {
             this.isLogin = true
         } else {
@@ -92,7 +90,6 @@ export default {
         handleLogOut() {
             this.api.userService.logout()
             this.isLogin = false
-            console.log('Los gehts', this.isLogin)
         },
     },
 }

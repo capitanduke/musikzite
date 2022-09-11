@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createStore } from 'vuex'
-import indexRoute from './components/Router'
-import * as api from './services/user.service'
+import indexRoute from './Router'
+import * as api from './services/index'
 
 const store = createStore({
     state: {
